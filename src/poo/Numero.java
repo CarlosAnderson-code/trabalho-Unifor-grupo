@@ -18,7 +18,5 @@ public class Numero {
   setx(x + y);
   return getX();
   }
-/*teste no coment */
-/*teste 33333 */
 
 }
