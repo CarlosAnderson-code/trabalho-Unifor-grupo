@@ -1,6 +1,7 @@
 package poo;
 
 public class Numero {
+  /* Entrei no repositório */
   private double x;
 
   private double getX() {
