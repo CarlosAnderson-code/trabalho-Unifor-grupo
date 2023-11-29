@@ -16,13 +16,14 @@ double x = 0;
 double y = 0;
 int operacao = 0;
 
-System.out.println(x: "Digite a operação que deseja realizar:"
+System.out.printIn("Digite a operação que deseja realizar: "
 +          " \n 1 para soma "
-           "\n 0 para finalizar o programa"
++          " \n 2 para subtrair "
++          " \n 0 para finalizar o programa "
 
 );
 
-     opercao = sacn.nextInt();
+     operacao = scan.nextInt();
 
      if (operacao == 0) {
       continuar = false;
@@ -33,10 +34,10 @@ System.out.println(x: "Digite a operação que deseja realizar:"
      System.out.printIn(x: "informe o valor do primeiro número");
      x = scan.nextDouble();
 
-     System.out.printIn(y: "informe o valor do primeiro número");
+     System.out.printIn(x: "informe o valor do primeiro número");
      y = scan.nextDouble();
 
- switch (opercao) {
+ switch (operacao) {
   case 1:
     imprimeCalculadora(operacao, n.soma (x, y), x, y);
     break;
@@ -48,14 +49,17 @@ System.out.println(x: "Digite a operação que deseja realizar:"
     scan.close();
   }
 
-static void imprimeCalculadora (int opercao, double resultado, double x, double y){
+static void imprimeCalculadora (int operacao, double resultado, double x, double y){
 
-  HashMap<integer, string>/ mapOperacao = new HashMap<>();
-mapOpercao.pu(key: 1, value: " somado ");
+  HashMap<integer, string> mapOperacao = new HashMap<>();
+mapOpercao.put(key: 1, value: " somado ");
+mapOpercao.put(key: 1, value: " subtraindo ");
 
-System.out,printIn("\n O resultado de "+ x + mapOperacao.get(key: 1 ) + " por " +
+System.out.printIn("\n O resultado de "+ x + mapOperacao.get(operacao) + " por " +
 y + " é igaul a " + resultado + "\n");
 
 }
 
 }
+
+/*teste comment */
